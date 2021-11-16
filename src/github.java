@@ -1,19 +1,19 @@
 import javax.swing.*;
-import java.util.Arrays;
 
 public class github {
     public static void main(String[] args)
     {
-        String antal = "";
-        int summa = 0;
-        antal = JOptionPane.showInputDialog(null, "Hur många tal?");
+        String antal = JOptionPane.showInputDialog(null, "Ange antal nummer");
         int antalInt = Integer.parseInt(antal);
-
-        int[] lista = new int[antalInt];
-        for(int i = 1; i <= lista.length; i++)
+        int[] lista = new int[antalInt + 1]; /*Kan vara fel, fixa*/
+        for(int i = 1; i <= antalInt; i++)
         {
-            antal = JOptionPane.showInputDialog(null, "Ange de " + i + "e numret");
-            lista[i] = Integer.parseInt(antal);
+            String newNum = JOptionPane.showInputDialog(null, "Ange det " + i + "e numret");
+            lista[i] = Integer.parseInt(newNum);
+        }
+        for(int i = 0; i <= antalInt; i++)
+        {
+
         }
     }
 }
