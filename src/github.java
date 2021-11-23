@@ -24,6 +24,7 @@ public class github {
             if(j == 0)
             {
                 Minvarde = lista[0];
+                Maxvarde = lista[0];
             }
             if(lista[j] > Maxvarde)
             {
