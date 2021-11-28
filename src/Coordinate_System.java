@@ -81,6 +81,10 @@ public class Coordinate_System {
             if(s.equals("s"))
             {
                 playerY++;
+                if(playerY >= cordY)
+                {
+                    playerY = 0;
+                }
                 for(int i = 0; i < cordY; i++)
                 {
                     if(playerY == i)
@@ -101,6 +105,10 @@ public class Coordinate_System {
             if(s.equals("w"))
             {
                 playerY--;
+                if(playerY < 0)
+                {
+                    playerY = cordY - 1;
+                }
                 for(int i = 0; i < cordY; i++)
                 {
                     if(playerY == i)
